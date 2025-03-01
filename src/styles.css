@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import "@spartan-ng/brain/hlm-tailwind-preset.css";
+@import "@angular/cdk/overlay-prebuilt.css";
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("../public/fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  src: url("../public/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
+}
+
+:root {
+  --font-sans: "Inter", sans-serif;
+}
+
+:root {
+  --background: 90 8% 95%;
+  --foreground: 120 8% 5%;
+
+  --card: 90 8% 95%;
+  --card-foreground: 120 8% 5%;
+
+  --popover: 90 8% 95%;
+  --popover-foreground: 120 8% 5%;
+
+  --primary: 102 21% 33%;
+  --primary-foreground: 60 9% 98%;
+
+  --secondary: 96 11% 91%;
+  --secondary-foreground: 120 8% 5%;
+
+  --muted: 105 9% 91%;
+  --muted-foreground: 100 9% 45%;
+
+  --accent: 96 11% 91%;
+  --accent-foreground: 120 8% 5%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 100 9% 87%;
+  --input: 107 9% 81%;
+  --ring: 101 36% 72%;
+
+  --radius: 0.5rem;
+  color-scheme: light;
+}
+
+.dark {
+  --background: 100 7% 8%;
+  --foreground: 60 9% 98%;
+
+  --card: 100 6% 10%;
+  --card-foreground: 60 9% 98%;
+
+  --popover: 100 6% 10%;
+  --popover-foreground: 60 9% 98%;
+
+  --primary: 102 21% 33%;
+  --primary-foreground: 60 9% 98%;
+
+  --secondary: 105 8% 19%;
+  --secondary-foreground: 60 9% 98%;
+
+  --muted: 104 7% 29%;
+  --muted-foreground: 102 8% 49%;
+
+  --accent: 102 71% 19%;
+  --accent-foreground: 60 9% 98%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 96 8% 12%;
+  --input: 105 9% 18%;
+  --ring: 101 22% 40%;
+  color-scheme: dark;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
